@@ -1,0 +1,120 @@
+/* Estilos para el header */
+header {
+    background-color: #3d7a2e; /* Color verde brillante para el fondo */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+header div {
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    color: #FFFFFF; /* Color blanco para el texto */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #459132; /* Verde para los enlaces */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efecto de transición para el hover */
+}
+
+header a:hover {
+    background-color: #195f1f; /* Oscurece el color verde cuando el mouse pasa por encima */
+}
+
+/* Estilos para el main */
+main {
+    background-color: #E0F7FA; /* Azul claro para el fondo */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Layout de la imagen y la sección */
+.layout {
+    display: flex;
+    flex-direction: row; /* Elementos en línea horizontal */
+    gap: 20px; /* Espacio entre la imagen y la sección */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.layout .contenedor {
+    flex: 1; /* Toma el 50% del ancho disponible */
+}
+
+.layout section {
+    flex: 1; /* Toma el 50% del ancho disponible */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column; /* Los elementos se apilan */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .layout .contenedor,
+    .layout section {
+        flex: none; /* Anula el comportamiento flexible */
+        width: 100%; /* Toma todo el ancho disponible */
+    }
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f8f5; /* Amarillo claro para el fondo */
+    border: 2px solid #195f1f; /* Verde más intenso para el borde */
+    border-radius: 8px;
+}
+
+/* Estilo para los artículos dentro de las secciones */
+article {
+    padding: 10px;
+    background-color: #3d7a2e; /* Verde oscuro para el fondo del artículo */
+    border-left: 4px solid #fffffff6; /* Blanco para el borde izquierdo */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #FFFFFF; /* Blanco para los títulos de los artículos */
+}
+
+article p {
+    color: #FFFFFF; /* Blanco para el texto */
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #306323; /* Verde intenso para el fondo */
+    color: #FFFFFF; /* Texto en blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    color: #3d7a2e; /* Verde brillante para los enlaces */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #195f1f; /* Oscurece el verde al pasar el mouse */
+}
+
+/* Estilo para la imagen */
+.imagen-redonda {
+    width: 488px; /* Tamaño de la imagen */
+    height: 450px; /* Altura igual para hacerla circular */
+    border-radius: 30%;
+    border: 5px solid #ccc; /* Borde gris */
+}
